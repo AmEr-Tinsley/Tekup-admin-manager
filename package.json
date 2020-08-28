@@ -7,8 +7,7 @@
     "client-install": "npm install --prefix frontend",
     "start": "node server.js",
     "server": "nodemon server.js --exec babel-node --presets babel-preset-env",
-    "client": "npm run serve --prefix frontend",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "client": "npm run serve --prefix frontend"
   },
   "author": "AmEr",
   "license": "ISC",
