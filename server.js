@@ -8,9 +8,11 @@ const path = require('path');
 mongoose.connect(keys.mongoURI);
 const app = express()
 app.use(bodyParser.json())
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 app.use(cors())
 
-
+app.use(require('connect-history-api-fallback')())
 const admin = require('./routes/admin');
 app.use('/admin', admin);
 
