@@ -9,6 +9,9 @@ admin.use(cors())
 
 process.env.SECRET_KEY = 'secret'
 
+admin.get('/g',(req,res) => {
+  res.send('worked ??');
+})
 
 admin.post('/login', (req, res) => {
   Admin.findOne({

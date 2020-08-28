@@ -14,7 +14,7 @@ app.use(cors())
 
 app.use(require('connect-history-api-fallback')())
 const admin = require('./routes/admin');
-app.use('/admin', admin);
+app.use('/api/', admin);
 
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static(__dirname + '/public/'));
