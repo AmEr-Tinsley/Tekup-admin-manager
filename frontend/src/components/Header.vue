@@ -9,7 +9,7 @@
         <v-toolbar-title>Haloulou</v-toolbar-title>
         <v-spacer></v-spacer>
           <v-btn color='primary'>
-                           loginnnn
+                    login
           </v-btn>
       </v-app-bar>
 
