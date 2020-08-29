@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './components/Home.vue'
-import Wa from './components/Wa.vue'
+import Home from './components/Admin_section/Home.vue'
+import AddTeacher from './components/Admin_section/AddTeacher'
+import AddCourse from './components/Admin_section/AddCourse'
+import AddClass from './components/Admin_section/AddClass'
+
 Vue.use(Router)
 
 export default new Router({
     mode: 'history',
-    base: 'http://localhost:8080',
     routes:[
         {
             path: '/',
@@ -14,9 +16,19 @@ export default new Router({
             component: Home
         },
         {
-            path : '/wa',
-            name : 'wa',
-            component : Wa
+            path : '/addteacher',
+            name:'addtacher',
+            component: AddTeacher
+        },
+        {
+            path:'/addcourse',
+            name:'addcourse',
+            component:AddCourse
+        },
+        {
+            path:'/addclass',
+            name:'addclass',
+            component:AddClass
         }
     ]
 })

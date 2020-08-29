@@ -6,9 +6,14 @@
         dark
         inverted-scroll
       >
-        <v-toolbar-title>Haloulou</v-toolbar-title>
+        <v-toolbar-title>Admin manager</v-toolbar-title>
         <v-spacer></v-spacer>
-          <v-btn color='primary'>
+       
+          
+
+         
+          
+          <v-btn color='secondary'>
                     login
           </v-btn>
       </v-app-bar>

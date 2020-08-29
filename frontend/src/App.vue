@@ -1,19 +1,23 @@
 <template>
   <v-app class="app">
-    <Header />
+    <InterfaceHeader/>
     <v-content>
       <router-view />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import Header from "./components/Header";
+import InterfaceHeader from "./components/Admin_section/InterfaceHeader";
+import Footer from "./components/Footer";
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    InterfaceHeader,
+    Footer
   }
 }
 </script>
