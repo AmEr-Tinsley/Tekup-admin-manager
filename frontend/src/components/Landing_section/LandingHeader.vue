@@ -8,14 +8,9 @@
       >
         <v-toolbar-title>Admin manager</v-toolbar-title>
         <v-spacer></v-spacer>
-       
-          
-
-         
-          
-          <v-btn color='secondary'>
+        <v-btn color='secondary'>
                     login
-          </v-btn>
+        </v-btn>
       </v-app-bar>
 
     </div>

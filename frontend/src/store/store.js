@@ -4,13 +4,13 @@ import Vuex from 'vuex'
 import VueAxios from 'vue-axios'
 import Axios from 'axios'
 
-import wa from './wa'
+import Teachers from './Teachers'
 
 Vue.use(Vuex)
 Vue.use(VueAxios, Axios)
 
 export default new Vuex.Store({
   modules: {
-        wa
+        Teachers
   }
 })
