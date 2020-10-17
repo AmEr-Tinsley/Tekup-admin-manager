@@ -12,6 +12,10 @@ const CourseSchema = new Schema({
   },
   class:{
     type: mongoose.Schema.Types.ObjectId, ref: 'Class', autopopulate: true
+  },
+  semestre:{
+    type:Number,
+    required:true
   }
 })
 
